@@ -1,11 +1,15 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 
+:root {
+  --bs-border-color: #F4F4F4;
+}
 
 body {
   font-family: 'Pretendard';
   font-weight: 400;
   text-align: center;
   font-size: 18px;
+  transition: background-color 1s ease-in-out;
 }
 
 a {
@@ -19,6 +23,14 @@ a:hover {
 
 .blue {
   color: #AED7EB;
+}
+
+.color-white {
+  background: #fff;
+}
+
+.color-blue {
+  background: #AED7EB;
 }
 
 .left {
@@ -141,11 +153,38 @@ nav li {
 .arrow {
   width: 45px;
   height: auto;
+  animation: down 1s infinite;
+	-webkit-animation: down 1s infinite;
 }
 
 .scroll {
   padding: 172px 0;
 }
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
 /* intro **********************************************************************************/
 
 #intro p {
@@ -209,27 +248,6 @@ nav li {
   border: 1px solid #fff;
 }
 
-/* .button {
-  width: 100%;
-  height: 40px;
-  display: block;
-}
-
-.text {
-  transition: all .6s ease-out;
-  display: block;
-  line-height: 40px;
-  border-bottom: 1px solid #FAFE3E;
-  background: linear-gradient(to right, #FAFE3E 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-}
-
-.text:hover {
-  color: black;
-  background-position: left bottom;  
-} */
-
 /* lecture ********************************************************************************/
 .lectures {
   display: flex;
@@ -240,21 +258,20 @@ nav li {
 .main-lec {
   background-image: url("../images/lecture1.jpg");
   background-repeat: no-repeat;
-  background-size: 130% auto;
+  background-size: 140% auto;
   background-position: 0% 37%;
-  padding: 7%;
+  padding: 9% 5% 0;
   position: relative;
   color: #fff;
   width: 100%;
   height: 20vw;
-  min-height: 282px;
   border-radius: 20px;
   margin-bottom: 50px;
 }
 
 .main-lec a {
   position: absolute;
-  bottom: 35px;
+  bottom: 12%;
   text-decoration : underline;
 }
 
@@ -269,9 +286,8 @@ nav li {
 
 .thumnail {
   background-color: #D9D9D9;
-  height: 12vw;
+  height: 11.25vw;
   width: 20vw;
-  min-height: 175px;
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 20px;
@@ -293,15 +309,21 @@ nav li {
 }
 
 #news h3 {
-  margin-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 .publisher {
   display: flex;
+  padding-top: 25px;
+  font-weight: 600;
 }
 
 .publisher > p {
-  margin-right: 50px;
+  margin-right: 25px;
+}
+
+.publisher p + p {
+  color: #A8A8A8
 }
 
 #news a {
@@ -309,8 +331,9 @@ nav li {
 }
 
 .news h4{
-  margin-bottom: 50px;
+  padding-bottom: 25px;
   word-break: keep-all;
+  margin: 0;
 }
 
 #news a:hover {
@@ -414,10 +437,22 @@ nav li {
   .container-fluid{
     padding: 9% 10%;
   }
+  
+  .main-lec {
+    height: 24.3vw;
+  }
+
+  .main-lec h6 {
+    margin-bottom: 6px;
+  }
+
+  .main-lec h3 {
+    margin-bottom: 3px;
+  }
 
   .thumnail {
-    height: 22vw;
-    width: 37vw;
+    height: 20.25vw;
+    width: 36vw;
   }
 }
 
@@ -508,9 +543,9 @@ nav li {
   }
 
   #messenger img {
-    width: 35vw;
-    height: 35vw;
-    margin-bottom: 10vw;
+    width: 38vw;
+    height: 38vw;
+    margin-bottom: 4vw;
   }
 
   .profile {
@@ -546,7 +581,7 @@ nav li {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 650px) {
   .no-tablet {
     display: none;
   }
@@ -556,11 +591,20 @@ nav li {
   }
 
   #messenger img {
-    width: 40vw;
-    height: 40vw;
+    width: 43vw;
+    height: 43vw;
+  }
+
+  .main-lec {
+    background-size: 250% auto;
+    background-position: 36% 47%;
+    padding: 45% 20px 0;
+    width: 100%;
+    height: 75vw;
   }
 
   .thumnail {
     width: 90vw;
+    height: 50.625vw;
   }
 }

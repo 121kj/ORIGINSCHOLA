@@ -44,3 +44,29 @@ btn.addEventListener('click', e => {
         btn.innerHTML = "더보기";
     }
 });
+
+// Color Change
+$(window).scroll(function () {
+    var $window = $(window),
+        $body1 = $('#messenger'),
+        $body2 = $('#lecture'),
+        $panel = $('.panel');
+
+    var scroll = $window.scrollTop() + ($window.height() / 2);
+    $panel.each(function () {
+        var $this = $(this);
+        if ($this.position().top <= scroll &&
+            $this.position().top + $this.height() > scroll) {
+            $body1.removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) ||
+                    []).join('');
+            });
+            $body2.removeClass(function (index, css) {
+                return (css.match(/(^|\s)color-\S+/g) ||
+                    []).join('');
+            });
+            $body1.addClass('color-' + $(this).data('color'));
+            $body2.addClass('color-' + $(this).data('color'));
+        }
+    }).scroll();
+});
