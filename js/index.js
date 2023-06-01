@@ -32,13 +32,13 @@ let isOpen = false;
 btn.addEventListener('click', e => {
     if (isOpen == false) {
         isOpen = true;
-        i4.classList.remove('no-phone');
+        i4.classList.remove('no-tablet');
         i5.classList.remove('no-phone');
         i6.classList.remove('no-phone');
         btn.innerHTML = "감추기";
     } else {
         isOpen = false;
-        i4.classList.add('no-phone');
+        i4.classList.add('no-tablet');
         i5.classList.add('no-phone');
         i6.classList.add('no-phone');
         btn.innerHTML = "더보기";

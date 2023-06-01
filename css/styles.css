@@ -386,208 +386,63 @@ nav li {
 
 /* Responsible ******************************************************************* */
 
-/* @media (max-width: 1400px) {
+@media (max-width: 1370px) {
   h1 {
-    font-size: 2rem;
+    font-size: 55px;
   }
 
-  .section-heading {
-    font-size: 2rem;
+  #intro p {
+    font-size: 25px;
   }
-}
 
-@media (min-width: 1200px) {
-  .full {
-    display: none;
+  .main-lec h3 {
+    font-size: 35px;
   }
 }
 
-@media (max-width: 1199px) {
-  .container-fluid {
-    padding: 15% 14%;
-  }
-
-  #conference .container-fluid {
-    padding: 15% 14% 50px;
-  }
-
-  #foot .container-fluid {
-    padding: 2% 14%;
-  }
-
-  .title-img {
-    width: 360px;
-  }
-
-  .psalms-img {
-    width: 540px;
-  }
-
-  .slide {
-    padding-left: 14%;
-  }
-
-  .video {
-    width: 50%;
-    height: 23vw;
-  }
-
-  .hidden-2col {
-    display: none;
-  }
-
-  #v11, #v12 {
-    display: none;
-  }
-}
-
-@media (max-width: 1027px) {
-  body {
-    font-size: 1rem;
-  }
-
+@media (max-width: 1159px) {
   h1 {
-    font-size: 1.7rem;
-  }
-
-  .section-heading {
-    font-size: 1.7rem;
+    font-size: 45px;
   }
 
   h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  h4 {
-    font-size: 1.4rem;
-  }
-
-  .accordion-button {
-    font-size: 1rem;
-  }
-
-  .footer {
-    font-size: 14px;
-  }
-
-  #foot i {
-    font-size: 23px;
-  }
-
-  #conference img {
-    width: 360px;
-    height: 480px;
-  }
-
-  .img {
-    width: 310px;
-    height: 460px;
-    line-height: 460px;
-  }
-
-  .img-div {
-    width: 360px;
-    height: 540px;
-  }
-
-  .slide {
-    height: 560px;
+    font-size: 45px;
   }
 }
 
-@media (max-width: 991px) {
-  .container-fluid {
-    padding: 15% 10%;
+@media (max-width: 1024px) {
+  .container-fluid{
+    padding: 9% 10%;
   }
 
-  #title .container-fluid {
-    padding: 50% 10% 7%;
+  .thumnail {
+    height: 22vw;
+    width: 37vw;
+  }
+}
+
+@media (max-width: 866px) {
+  .main-lec h3 {
+    font-size: 30px;
   }
 
-  #conference .container-fluid {
-    padding: 15% 10% 50px;
+  .icon {
+    justify-content: flex-start;
   }
-
-  #foot .container-fluid {
-    padding: 2% 10%;
+  
+  .icon a {
+    margin-right: 10px;
+    margin-left: 0;
   }
+}
 
-  body {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .section-heading {
-    font-size: 1.5rem;
-  }
-
-  .move-title {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1.3rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  .accordion-button {
-    font-size: 14px;
-  }
-
-  .footer {
-    font-size: 12px;
-  }
-
-  #foot i {
-    font-size: 20px;
-  }
-
-  #conference img {
-    width: 320px;
-    height: 440px;
-  }
-
-  .img {
-    width: 270px;
-    height: 420px;
-    line-height: 420px;
-  }
-
-  .slide {
-    padding-left: 10%;
-  }
-
-  .img-div {
-    width: 320px;
-    height: 500px;
-  }
-
-  .slide {
-    height: 520px;
-  }
-} */
-
-@media (min-width: 769px) {
+@media (min-width: 783px) {
   .phone {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 782px) {
   .no-phone {
     display: none;
   }
@@ -610,10 +465,6 @@ nav li {
 
   h4 {
     font-size: 20px;
-  }
-
-  .container-fluid {
-    padding: 15% 5% 20%;
   }
 
   .navbar {
@@ -657,9 +508,8 @@ nav li {
   }
 
   #messenger img {
-    width: 40vw;
-    height: 40vw;
-    border-radius: 25px;
+    width: 35vw;
+    height: 35vw;
     margin-bottom: 10vw;
   }
 
@@ -681,11 +531,6 @@ nav li {
     font-size: 13px;
   }
 
-  .thumnail {
-    width: 90vw;
-  }
-
-
   #foot .container-fluid {
     margin: 2% 5%;
     padding: 15px 0 100px;
@@ -699,13 +544,23 @@ nav li {
   .footer-line h6 {
     font-size: 13px;
   }
-  
-  .icon {
-    justify-content: flex-start;
+}
+
+@media (max-width: 470px) {
+  .no-tablet {
+    display: none;
   }
-  
-  .icon a {
-    margin-right: 10px;
-    margin-left: 0;
+
+  .container-fluid {
+    padding: 15% 5% 20%;
+  }
+
+  #messenger img {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .thumnail {
+    width: 90vw;
   }
 }
