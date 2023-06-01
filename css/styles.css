@@ -153,37 +153,12 @@ nav li {
 .arrow {
   width: 45px;
   height: auto;
-  animation: down 1s infinite;
-  animation: flickerAnimation 1s infinite;
-	-webkit-animation: down 1s infinite;
-  -webkit-animation: flickerAnimation 1s infinite;
-  -moz-animation: flickerAnimation 1s infinite;
-  -o-animation: flickerAnimation 1s infinite;
+  animation: down 2s infinite;
+	-webkit-animation: down 2s infinite;
 }
 
 .scroll {
   padding: 172px 0;
-}
-
-@keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-o-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
 }
 
 @keyframes down {
