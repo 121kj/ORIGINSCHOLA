@@ -310,6 +310,7 @@ nav li {
 
 .news h4{
   margin-bottom: 50px;
+  word-break: keep-all;
 }
 
 #news a:hover {
@@ -372,15 +373,15 @@ nav li {
 
 .fade-in {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateY(50%);
-  transition: all 0.7s;
+  /* filter: blur(5px); */
+  transform: translateY(30%);
+  transition: all 0.7s ease-in-out;
 }
 
 .fade-in.appear {
   opacity: 1;
-  filter: blur(0);
-  transform: translateY(0 );
+  /* filter: blur(0); */
+  transform: translateY(0);
 }
 
 /* Responsible ******************************************************************* */
@@ -581,13 +582,13 @@ nav li {
 } */
 
 @media (min-width: 769px) {
-  .no-phone {
+  .phone {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
-  .phone {
+  .no-phone {
     display: none;
   }
 
@@ -625,7 +626,7 @@ nav li {
 
   #title h1 {
     font-size: 38px;
-    margin-top: 450px;
+    margin-top: 300px;
   }
 
   .scroll {

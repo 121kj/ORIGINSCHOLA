@@ -32,15 +32,15 @@ let isOpen = false;
 btn.addEventListener('click', e => {
     if (isOpen == false) {
         isOpen = true;
-        i4.classList.remove('phone');
-        i5.classList.remove('phone');
-        i6.classList.remove('phone');
+        i4.classList.remove('no-phone');
+        i5.classList.remove('no-phone');
+        i6.classList.remove('no-phone');
         btn.innerHTML = "감추기";
     } else {
         isOpen = false;
-        i4.classList.add('phone');
-        i5.classList.add('phone');
-        i6.classList.add('phone');
+        i4.classList.add('no-phone');
+        i5.classList.add('no-phone');
+        i6.classList.add('no-phone');
         btn.innerHTML = "더보기";
     }
 });
